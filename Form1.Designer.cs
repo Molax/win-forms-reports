@@ -33,11 +33,11 @@
             // 
             // btnRelSetor
             // 
-            this.btnRelSetor.Location = new System.Drawing.Point(128, 60);
+            this.btnRelSetor.Location = new System.Drawing.Point(137, 110);
             this.btnRelSetor.Name = "btnRelSetor";
-            this.btnRelSetor.Size = new System.Drawing.Size(75, 23);
+            this.btnRelSetor.Size = new System.Drawing.Size(193, 62);
             this.btnRelSetor.TabIndex = 0;
-            this.btnRelSetor.Text = "button1";
+            this.btnRelSetor.Text = "Mostrar Relatórios";
             this.btnRelSetor.UseVisualStyleBackColor = true;
             this.btnRelSetor.Click += new System.EventHandler(this.btnRelSetor_Click);
             // 

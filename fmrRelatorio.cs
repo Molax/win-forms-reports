@@ -25,6 +25,7 @@ namespace Relatorios
             this.tblFuncionarioTableAdapter.Fill(this.DataSetEmpresa.tblFuncionario);
 
             this.reportViewer1.RefreshReport();
+            this.reportViewer2.RefreshReport();
         }
     }
 }

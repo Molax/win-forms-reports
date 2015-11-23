@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,11 +20,8 @@ namespace Relatorios
 
         private void btnRelSetor_Click(object sender, EventArgs e)
         {
-            DataSetEmpresaTableAdapters.tblSetorTableAdapter adapter =
-            new DataSetEmpresaTableAdapters.tblSetorTableAdapter();
 
             fmrRelatorio frm = new fmrRelatorio();
-
 
             frm.Show();
         }

@@ -81,6 +81,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RelFuncionarios.rdlc" />
     <EmbeddedResource Include="RelSetores.rdlc" />
     <None Include="DataSetEmpresa.xsc">
       <DependentUpon>DataSetEmpresa.xsd</DependentUpon>
