@@ -23,9 +23,13 @@ namespace Relatorios
 
             fmrRelatorio frm = new fmrRelatorio();
 
-            frm.reportViewer1.LocalReport.SetParameters(new Microsoft.Reporting.WinForms.ReportParameter("Empresa", "Empresa do Yuri"));
+            frm.reportViewer1.LocalReport.SetParameters(new Microsoft.Reporting.WinForms.ReportParameter("Empresa", "Fabio.com Soluções em Informática"));
 
-            frm.reportViewer2.LocalReport.SetParameters(new Microsoft.Reporting.WinForms.ReportParameter("Empresa", "Empresa do Yuri"));
+            frm.reportViewer2.LocalReport.SetParameters(new Microsoft.Reporting.WinForms.ReportParameter("Empresa", "Fabio.com Soluções em Informática"));
+
+            frm.reportViewer3.LocalReport.SetParameters(new Microsoft.Reporting.WinForms.ReportParameter("Empresa", "Fabio.com Soluções em Informática"));
+
+            frm.reportViewer4.LocalReport.SetParameters(new Microsoft.Reporting.WinForms.ReportParameter("Empresa", "Fabio.com Soluções em Informática"));
 
             frm.Show();
         }
