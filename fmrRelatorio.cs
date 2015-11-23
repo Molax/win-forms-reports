@@ -29,6 +29,7 @@ namespace Relatorios
             this.reportViewer3.RefreshReport();
             this.reportViewer3.RefreshReport();
             this.reportViewer4.RefreshReport();
+            this.reportViewer5.RefreshReport();
         }
     }
 }

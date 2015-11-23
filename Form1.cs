@@ -31,6 +31,8 @@ namespace Relatorios
 
             frm.reportViewer4.LocalReport.SetParameters(new Microsoft.Reporting.WinForms.ReportParameter("Empresa", "Fabio.com Soluções em Informática"));
 
+            frm.reportViewer5.LocalReport.SetParameters(new Microsoft.Reporting.WinForms.ReportParameter("Empresa", "Fabio.com Soluções em Informática"));
+
             frm.Show();
         }
     }

@@ -34,6 +34,7 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.tblSetorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSetEmpresa = new Relatorios.DataSetEmpresa();
             this.tblFuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -50,6 +51,8 @@
             this.reportViewer3 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.reportViewer4 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.reportViewer5 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.tblSetorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetEmpresa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblFuncionarioBindingSource)).BeginInit();
@@ -59,6 +62,7 @@
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tblSetorBindingSource
@@ -113,6 +117,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -197,6 +202,28 @@
             this.reportViewer4.Size = new System.Drawing.Size(933, 514);
             this.reportViewer4.TabIndex = 0;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.reportViewer5);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(939, 520);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Grafico Salarios / Setor";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // reportViewer5
+            // 
+            reportDataSource6.Name = "DataSetFuncionarios";
+            reportDataSource6.Value = this.tblFuncionarioBindingSource;
+            this.reportViewer5.LocalReport.DataSources.Add(reportDataSource6);
+            this.reportViewer5.LocalReport.ReportEmbeddedResource = "Relatorios.GraficoSalarioPorSetor.rdlc";
+            this.reportViewer5.Location = new System.Drawing.Point(6, 6);
+            this.reportViewer5.Name = "reportViewer5";
+            this.reportViewer5.Size = new System.Drawing.Size(927, 508);
+            this.reportViewer5.TabIndex = 0;
+            // 
             // fmrRelatorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,6 +242,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -237,5 +265,7 @@
         private System.Windows.Forms.TabPage tabPage4;
         public System.Windows.Forms.TabControl tabControl1;
         public Microsoft.Reporting.WinForms.ReportViewer reportViewer4;
+        private System.Windows.Forms.TabPage tabPage5;
+        public Microsoft.Reporting.WinForms.ReportViewer reportViewer5;
     }
 }

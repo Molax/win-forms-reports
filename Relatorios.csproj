@@ -73,6 +73,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GraficoFuncPorSetor.rdlc" />
+    <EmbeddedResource Include="GraficoSalarioPorSetor.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
