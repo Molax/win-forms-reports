@@ -32,6 +32,7 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.tblSetorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSetEmpresa = new Relatorios.DataSetEmpresa();
             this.tblFuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -44,6 +45,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.reportViewer3 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.tblSetorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetEmpresa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblFuncionarioBindingSource)).BeginInit();
@@ -51,6 +54,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tblSetorBindingSource
@@ -103,6 +107,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -128,7 +133,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(939, 520);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Relatorio Funcionarios";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // reportViewer2
@@ -141,6 +146,28 @@
             this.reportViewer2.Name = "reportViewer2";
             this.reportViewer2.Size = new System.Drawing.Size(878, 498);
             this.reportViewer2.TabIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.reportViewer3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(939, 520);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Relatorio Funcionarios/Setor";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // reportViewer3
+            // 
+            reportDataSource4.Name = "DataSetFuncionarios";
+            reportDataSource4.Value = this.tblFuncionarioBindingSource;
+            this.reportViewer3.LocalReport.DataSources.Add(reportDataSource4);
+            this.reportViewer3.LocalReport.ReportEmbeddedResource = "Relatorios.RelFuncionariosPorSetor.rdlc";
+            this.reportViewer3.Location = new System.Drawing.Point(6, 6);
+            this.reportViewer3.Name = "reportViewer3";
+            this.reportViewer3.Size = new System.Drawing.Size(917, 508);
+            this.reportViewer3.TabIndex = 0;
             // 
             // fmrRelatorio
             // 
@@ -158,13 +185,13 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource tblSetorBindingSource;
         private DataSetEmpresa DataSetEmpresa;
         private System.Windows.Forms.BindingSource tblFuncionarioBindingSource;
@@ -175,6 +202,9 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
+        private System.Windows.Forms.TabPage tabPage3;
+        public Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
+        public Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer3;
     }
 }

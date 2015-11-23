@@ -23,6 +23,10 @@ namespace Relatorios
 
             fmrRelatorio frm = new fmrRelatorio();
 
+            frm.reportViewer1.LocalReport.SetParameters(new Microsoft.Reporting.WinForms.ReportParameter("Empresa", "Empresa do Yuri"));
+
+            frm.reportViewer2.LocalReport.SetParameters(new Microsoft.Reporting.WinForms.ReportParameter("Empresa", "Empresa do Yuri"));
+
             frm.Show();
         }
     }
