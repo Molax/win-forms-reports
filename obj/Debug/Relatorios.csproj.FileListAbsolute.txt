@@ -1,0 +1,12 @@
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\bin\Debug\Relatorios.exe.config
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\bin\Debug\Relatorios.exe
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\bin\Debug\Relatorios.pdb
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\obj\Debug\Relatorios.csprojResolveAssemblyReference.cache
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\obj\Debug\Relatorios.fmrRelatorio.resources
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\obj\Debug\Relatorios.Form1.resources
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\obj\Debug\Relatorios.Properties.Resources.resources
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\obj\Debug\Relatorios.csproj.GenerateResource.Cache
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\obj\Debug\RdlCompile.cache
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\obj\Debug\RdlCompile.compiled
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\obj\Debug\Relatorios.exe
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\Relatorios\obj\Debug\Relatorios.pdb
